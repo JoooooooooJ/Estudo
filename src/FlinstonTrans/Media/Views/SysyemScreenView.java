@@ -41,7 +41,10 @@ public class SysyemScreenView extends javax.swing.JFrame {
         jComboBox5 = new javax.swing.JComboBox<>();
         jFormattedTextField1 = new javax.swing.JFormattedTextField();
         jButton1 = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
+        jLabel8 = new javax.swing.JLabel();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        jComboBox8 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,26 +53,30 @@ public class SysyemScreenView extends javax.swing.JFrame {
         jLabel1.setText("TRANSPORTADORA  FLINSTONS & CIA LTDA");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 26, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel2.setText("SERVIÇO:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 102, -1, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Nenhum>", "Transporte Granel", "Transporte Big Bag" }));
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 99, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel3.setText("Veículo:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 171, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Scania 113H", "Scania 124G", "Mercedez-Bens", "Volvo FH - Globertrotter" }));
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 168, -1, -1));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel4.setText("Origem:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 237, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Santos/SP", "Assis/SP", "Marilia/SP", "Ibiporã/PR", "Londrina/PR", "Maringá/PR" }));
-        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 234, -1, -1));
+        getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel5.setText("Destino:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 311, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, -1, -1));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Curitiba/PR", "Francisco Beltrão/PR", "Sertaneja/PR", "Campo Grande/MS", "São Paulo/SP", "Campinas/SP" }));
         jComboBox4.addActionListener(new java.awt.event.ActionListener() {
@@ -77,8 +84,9 @@ public class SysyemScreenView extends javax.swing.JFrame {
                 jComboBox4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 308, -1, -1));
+        getContentPane().add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel6.setText("Motorista:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 378, -1, -1));
 
@@ -91,7 +99,19 @@ public class SysyemScreenView extends javax.swing.JFrame {
 
         jButton1.setText("CONFIRMAR");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 422, -1, -1));
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 270, 390, 10));
+
+        jLabel8.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
+        jLabel8.setText("Carga:");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Nenhum>", "Milho", "Soja", "Farelo de Trigo", "Farelo de Laranja", "Fertilizante" }));
+        getContentPane().add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 300, -1, -1));
+
+        jLabel9.setText("Carreta:");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, -1, -1));
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<Nenhum>", "Carreta Simples", "Bitrem", "Rodotrem" }));
+        getContentPane().add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -143,6 +163,8 @@ public class SysyemScreenView extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -151,6 +173,7 @@ public class SysyemScreenView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
