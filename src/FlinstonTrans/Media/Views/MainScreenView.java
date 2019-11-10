@@ -32,6 +32,8 @@ public class MainScreenView extends javax.swing.JFrame {
 
         mainBackground = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         Background = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         btnRegistry = new javax.swing.JMenu();
@@ -48,7 +50,22 @@ public class MainScreenView extends javax.swing.JFrame {
         mainBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 211, 105));
-        mainBackground.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 530));
+        mainBackground.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 530));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        mainBackground.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 520, 320));
 
         getContentPane().add(mainBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 530));
 
@@ -130,6 +147,8 @@ public class MainScreenView extends javax.swing.JFrame {
     private javax.swing.JMenuItem btnTruckload;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JPanel mainBackground;
     // End of variables declaration//GEN-END:variables
 }
