@@ -1,8 +1,5 @@
 package FlinstonTrans.src.Classes;
 
-public class Conexao {
-    //Declaração de bibliotecas
-    
     import java.sql.Connection;
     import java.sql.DriverManager;
     import java.sql.SQLException;
@@ -10,11 +7,12 @@ public class Conexao {
     import javax.swing.JOptionPane;
     import java.sql.ResultSet;
     import javax.swing.plaf.RootPaneUI;
-    
-    public class Connection{
+
+public class Conexao {
+    //Declaração de bibliotecas   
         private ResultSet resSet = null;
         private Connection cnc = null;
-        private Statment stmt = null;
+        private Statement stmt = null;
         private static String url = "jdbc:postgresql:"
             + "//localhost:5432/postgres";
         private static String usuario = "Cesar Oliveira";
@@ -22,4 +20,4 @@ public class Conexao {
     
     
     }
-}
+
