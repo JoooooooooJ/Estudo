@@ -90,7 +90,6 @@ public class LoginView extends javax.swing.JFrame {
         btnSignin.setBackground(new java.awt.Color(255, 255, 255));
         btnSignin.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnSignin.setText("ENTRAR");
-        btnSignin.setActionCommand("ENTRAR");
         btnSignin.setAlignmentY(0.0F);
         btnSignin.setBorder(null);
         btnSignin.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);

@@ -3,8 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/TransportadoraAgricola/src/FlinstonTrans/Media/Views/MainScreen.java</file>
-            <file>file:/C:/Users/Usuario/Documents/NetBeansProjects/TransportadoraAgricola/src/FlinstonTrans/Media/Views/LoginView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/TruckRegistryScreenView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/RegistryDriverView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/NoteScreenView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/TruckloadRegistryView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/MainScreenView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/LoginView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/SeeAllotView.java</file>
+            <file>file:/C:/Users/GitProjeto/Estudo/src/FlinstonTrans/Media/Views/SystemScreenView.java</file>
         </group>
     </open-files>
 </project-private>
