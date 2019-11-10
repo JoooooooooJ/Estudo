@@ -5,6 +5,8 @@
  */
 package FlinstonTrans.Media.Views;
 
+import java.awt.Color;
+
 /**
  *
  * @author Usuario
@@ -16,6 +18,7 @@ public class MainScreenView extends javax.swing.JFrame {
      */
     public MainScreenView() {
         initComponents();
+        mainBackground.setBackground(new Color(0,85,66,200));
     }
 
     /**
@@ -27,21 +30,77 @@ public class MainScreenView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        mainBackground = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        Background = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        btnRegistry = new javax.swing.JMenu();
+        btnTruck = new javax.swing.JMenuItem();
+        btnTruckload = new javax.swing.JMenuItem();
+        btnDriver = new javax.swing.JMenuItem();
+        btnMainSystem = new javax.swing.JMenu();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        mainBackground.setBackground(new java.awt.Color(0, 85, 66));
+        mainBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 211, 105));
+        mainBackground.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 240, 530));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        mainBackground.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 520, 320));
+
+        getContentPane().add(mainBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 530));
+
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backGroundLogin_image.png"))); // NOI18N
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 530));
+
+        btnRegistry.setText("Cadastros");
+
+        btnTruck.setText("Caminhão");
+        btnRegistry.add(btnTruck);
+
+        btnTruckload.setText("Carreta");
+        btnTruckload.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTruckloadActionPerformed(evt);
+            }
+        });
+        btnRegistry.add(btnTruckload);
+
+        btnDriver.setText("Motorista");
+        btnRegistry.add(btnDriver);
+
+        jMenuBar1.add(btnRegistry);
+
+        btnMainSystem.setText("Transportadora");
+        jMenuBar1.add(btnMainSystem);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnTruckloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTruckloadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTruckloadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +139,16 @@ public class MainScreenView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Background;
+    private javax.swing.JMenuItem btnDriver;
+    private javax.swing.JMenu btnMainSystem;
+    private javax.swing.JMenu btnRegistry;
+    private javax.swing.JMenuItem btnTruck;
+    private javax.swing.JMenuItem btnTruckload;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JPanel mainBackground;
     // End of variables declaration//GEN-END:variables
 }
