@@ -1,5 +1,6 @@
 package FlinstonTrans.Media.Views;
 
+import FlinstonTrans.src.Classes.Login;
 import java.awt.Color;
 
 public class LoginView extends javax.swing.JFrame {
@@ -94,6 +95,11 @@ public class LoginView extends javax.swing.JFrame {
         btnSignin.setBorder(null);
         btnSignin.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         btnSignin.setDefaultCapable(false);
+        btnSignin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSigninActionPerformed(evt);
+            }
+        });
         painelLogin.add(btnSignin, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 100, 40));
 
         PASSWORD.setFont(new java.awt.Font("Calibri", 0, 10)); // NOI18N
@@ -126,6 +132,11 @@ public class LoginView extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_btnExitMouseClicked
+
+    private void btnSigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSigninActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btnSigninActionPerformed
 
     /**
      * @param args the command line arguments

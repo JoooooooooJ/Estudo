@@ -5,6 +5,8 @@
  */
 package FlinstonTrans.Media.Views;
 
+import java.awt.Color;
+
 /**
  *
  * @author Usuario
@@ -16,6 +18,7 @@ public class MainScreenView extends javax.swing.JFrame {
      */
     public MainScreenView() {
         initComponents();
+        mainBackground.setBackground(new Color(0,85,66,200));
     }
 
     /**
@@ -27,11 +30,60 @@ public class MainScreenView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        mainBackground = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        Background = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        btnRegistry = new javax.swing.JMenu();
+        btnTruck = new javax.swing.JMenuItem();
+        btnTruckload = new javax.swing.JMenuItem();
+        btnDriver = new javax.swing.JMenuItem();
+        btnMainSystem = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new java.awt.GridLayout());
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        mainBackground.setBackground(new java.awt.Color(0, 85, 66));
+        mainBackground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 211, 105));
+        mainBackground.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 530));
+
+        getContentPane().add(mainBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 530));
+
+        Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backGroundLogin_image.png"))); // NOI18N
+        getContentPane().add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 530));
+
+        btnRegistry.setText("Cadastros");
+
+        btnTruck.setText("Caminhão");
+        btnRegistry.add(btnTruck);
+
+        btnTruckload.setText("Carreta");
+        btnTruckload.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTruckloadActionPerformed(evt);
+            }
+        });
+        btnRegistry.add(btnTruckload);
+
+        btnDriver.setText("Motorista");
+        btnRegistry.add(btnDriver);
+
+        jMenuBar1.add(btnRegistry);
+
+        btnMainSystem.setText("Transportadora");
+        jMenuBar1.add(btnMainSystem);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnTruckloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTruckloadActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTruckloadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +122,14 @@ public class MainScreenView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Background;
+    private javax.swing.JMenuItem btnDriver;
+    private javax.swing.JMenu btnMainSystem;
+    private javax.swing.JMenu btnRegistry;
+    private javax.swing.JMenuItem btnTruck;
+    private javax.swing.JMenuItem btnTruckload;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel mainBackground;
     // End of variables declaration//GEN-END:variables
 }
