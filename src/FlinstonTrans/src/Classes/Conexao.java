@@ -17,7 +17,15 @@ public class Conexao {
             + "//localhost:5432/postgres";
         private static String usuario = "Cesar Oliveira";
         private static String senha = "123"; 
-    
-    
+        
+        boolean testa_conexao (){
+   try{
+        cnc = DriverManager.
+               getConnection(url,usuario,senha);
+        cnc.close();
+        return true;
+   }catch(SQLException e){return false;}
+           
     }
+}
 
