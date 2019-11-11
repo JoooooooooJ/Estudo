@@ -24,8 +24,41 @@ public class Conexao {
                getConnection(url,usuario,senha);
         cnc.close();
         return true;
-   }catch(SQLException e){return false;}
-           
-    }
+   }catch(SQLException e){return false;}     
+    
+        }
+        boolean cria_db(){
+       try {
+          cnc = DriverManager.
+               getConnection(url,usuario,senha);
+          stmt = cnc.createStatement();
+          String sql = "create table if not "
+                  + "exists aluno ("
+                  + "ra integer primary key,"
+                  + "nome character varying(100),"
+                  + "cpf character varying(11)"
+                  + ");";
+          
+         stmt.executeUpdate(sql);
+         stmt.close();
+        cnc.close();
+        return true;
+       } catch (Exception e) {
+       return false;
+       }
 }
-
+         boolean insere (String SQL){
+     try{
+       cnc = DriverManager.
+               getConnection(url,usuario,senha);
+       stmt = cnc.createStatement();
+       String sql = null;
+       
+       stmt.executeUpdate(sql);
+       stmt.close(); 
+       cnc.close();
+       return true;
+   }catch(SQLException e){return false;}   
+    
+   }
+}
