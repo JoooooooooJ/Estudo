@@ -19,6 +19,7 @@ public class MainScreenView extends javax.swing.JFrame {
     public MainScreenView() {
         initComponents();
         mainBackground.setBackground(new Color(0,85,66,200));
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -75,6 +76,11 @@ public class MainScreenView extends javax.swing.JFrame {
         btnRegistry.setText("Cadastros");
 
         btnTruck.setText("Caminhão");
+        btnTruck.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTruckActionPerformed(evt);
+            }
+        });
         btnRegistry.add(btnTruck);
 
         btnTruckload.setText("Carreta");
@@ -86,6 +92,11 @@ public class MainScreenView extends javax.swing.JFrame {
         btnRegistry.add(btnTruckload);
 
         btnDriver.setText("Motorista");
+        btnDriver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDriverActionPerformed(evt);
+            }
+        });
         btnRegistry.add(btnDriver);
 
         jMenuBar1.add(btnRegistry);
@@ -100,7 +111,21 @@ public class MainScreenView extends javax.swing.JFrame {
 
     private void btnTruckloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTruckloadActionPerformed
         // TODO add your handling code here:
+        new TruckloadRegistryView().show();
+        dispose();
     }//GEN-LAST:event_btnTruckloadActionPerformed
+
+    private void btnTruckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTruckActionPerformed
+        // TODO add your handling code here:
+        new TruckRegistryScreenView().show();
+        dispose();
+    }//GEN-LAST:event_btnTruckActionPerformed
+
+    private void btnDriverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDriverActionPerformed
+        // TODO add your handling code here:
+        new RegistryDriverView().show();
+        dispose();
+    }//GEN-LAST:event_btnDriverActionPerformed
 
     /**
      * @param args the command line arguments

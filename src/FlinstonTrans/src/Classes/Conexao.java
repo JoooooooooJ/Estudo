@@ -15,7 +15,7 @@ public class Conexao {
         private Statement stmt = null;
         private static String url = "jdbc:postgresql:"
             + "//localhost:5432/postgres";
-        private static String usuario = "Cesar Oliveira";
+        private static String usuario = "Usuario";
         private static String senha = "123"; 
         
         boolean testa_conexao (){

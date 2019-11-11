@@ -123,7 +123,7 @@ public class LoginView extends javax.swing.JFrame {
         getContentPane().add(painelOverlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 440));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backGroundLogin_image.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-360, 0, 1000, 440));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-360, 0, 990, 440));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -135,7 +135,8 @@ public class LoginView extends javax.swing.JFrame {
 
     private void btnSigninActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSigninActionPerformed
         // TODO add your handling code here:
-        
+        new MainScreenView().show();
+        dispose();
     }//GEN-LAST:event_btnSigninActionPerformed
 
     /**

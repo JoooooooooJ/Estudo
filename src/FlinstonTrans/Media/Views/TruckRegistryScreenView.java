@@ -38,8 +38,9 @@ public class TruckRegistryScreenView extends javax.swing.JFrame {
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
         jTextField10 = new javax.swing.JTextField();
+        btnHome = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        TruckData = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -66,7 +67,9 @@ public class TruckRegistryScreenView extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -101,94 +104,106 @@ public class TruckRegistryScreenView extends javax.swing.JFrame {
         jLabel12.setText("Pesquisar por:");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 11, -1, -1));
 
+        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox1.setText("N° Chassi");
         jPanel1.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 27, -1, -1));
 
+        jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox2.setText("Placa");
         jPanel1.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, -1, -1));
 
+        jCheckBox3.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox3.setText("Código");
         jPanel1.add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 74, -1, -1));
         jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(403, 75, 200, -1));
 
-        jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home_icon.png"))); // NOI18N
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHomeMouseClicked(evt);
+            }
+        });
+        jPanel1.add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, 30, 30));
+
+        TruckData.setBackground(new java.awt.Color(255, 255, 255));
+        TruckData.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 204, 204), 1, true));
+        TruckData.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel1.setText("Código:");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
+        TruckData.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 12, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel2.setText("Marca");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 12, -1, -1));
+        TruckData.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 12, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel3.setText("Modelo");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 12, -1, -1));
+        TruckData.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 12, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel4.setText("N° Chassi:");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 12, -1, -1));
+        TruckData.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(428, 12, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel5.setText("Placa:");
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 12, -1, -1));
+        TruckData.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 12, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel6.setText("Ano:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 12, -1, -1));
+        TruckData.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 12, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel7.setText("Cap.Tanque:");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 57, -1, -1));
+        TruckData.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 57, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel8.setText("Média KM/L:");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 57, -1, -1));
+        TruckData.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 57, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel9.setText("Motorista:");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 57, -1, -1));
-        jPanel3.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 31, 63, -1));
+        TruckData.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 57, -1, -1));
+        TruckData.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 31, 63, -1));
 
         jTextField2.setToolTipText("");
-        jPanel3.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 31, 64, -1));
+        TruckData.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 31, 64, -1));
 
         jTextField3.setToolTipText("");
-        jPanel3.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 31, 72, -1));
-        jPanel3.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 31, 70, -1));
-        jPanel3.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(331, 31, 90, -1));
-        jPanel3.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 31, 81, -1));
-        jPanel3.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 79, 63, -1));
-        jPanel3.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 79, 63, -1));
+        TruckData.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(165, 31, 72, -1));
+        TruckData.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 31, 70, -1));
+        TruckData.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(331, 31, 90, -1));
+        TruckData.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 31, 81, -1));
+        TruckData.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 79, 63, -1));
+        TruckData.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 79, 63, -1));
 
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 79, 176, -1));
+        TruckData.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 79, 176, -1));
 
         jLabel10.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel10.setText("Código:");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 57, -1, -1));
-        jPanel3.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, 59, -1));
+        TruckData.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 57, -1, -1));
+        TruckData.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 80, 59, -1));
 
         jLabel11.setText("Tipo veículo:");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 105, -1, -1));
+        TruckData.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 105, -1, -1));
 
-        jPanel3.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 126, 140, -1));
+        TruckData.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 126, 140, -1));
 
         jButton2.setText("Adicionar Imagem");
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 120, 40));
-        jPanel3.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 230, 70));
+        TruckData.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 120, 40));
+        TruckData.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 230, 70));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(TruckData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(TruckData, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -208,6 +223,12 @@ public class TruckRegistryScreenView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        // TODO add your handling code here:
+        new MainScreenView().show();
+        dispose();
+    }//GEN-LAST:event_btnHomeMouseClicked
 
     /**
      * @param args the command line arguments
@@ -252,6 +273,8 @@ public class TruckRegistryScreenView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel TruckData;
+    private javax.swing.JLabel btnHome;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -277,7 +300,6 @@ public class TruckRegistryScreenView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;

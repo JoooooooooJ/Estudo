@@ -16,6 +16,7 @@ public class SystemScreenView extends javax.swing.JFrame {
      */
     public SystemScreenView() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
